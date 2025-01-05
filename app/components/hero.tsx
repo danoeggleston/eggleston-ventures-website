@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -15,18 +16,14 @@ export default function Hero() {
             Eggleston Ventures acquires, operates, and grows AI-proof small businesses to ensure their legacy continues for decades to come.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="group bg-[#26306f] text-white px-8 py-4 text-lg font-bold 
-              transition-colors duration-200 
-              border-4 border-[#26306f] hover:bg-[#D32F2F] hover:border-[#D32F2F] hover:text-white">
-              Learn More About Us
-              <ArrowRight className="inline-block ml-2 group-hover:translate-x-2 transition-transform" />
-            </button>
-            <button className="group bg-white text-[#26306f] px-8 py-4 text-lg font-bold 
-              transition-colors duration-200 
-              border-4 border-[#26306f] hover:bg-[#607D8B] hover:text-white hover:border-[#607D8B]">
-              View Our Portfolio
-              <ArrowRight className="inline-block ml-2 group-hover:translate-x-2 transition-transform" />
-            </button>
+            <Link href="#portfolio">
+              <button className="group bg-white text-[#26306f] px-8 py-4 text-lg font-bold 
+                transition-colors duration-200 
+                border-4 border-[#26306f] hover:bg-[#607D8B] hover:text-white hover:border-[#607D8B]">
+                View Our Portfolio
+                <ArrowRight className="inline-block ml-2 group-hover:translate-x-2 transition-transform" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

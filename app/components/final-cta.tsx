@@ -14,8 +14,10 @@ export default function FinalCTA() {
           <button className="group bg-[#26306f] text-white px-8 py-4 text-lg font-bold 
             transition-colors duration-200 
             border-4 border-[#26306f] hover:bg-[#D32F2F] hover:border-[#D32F2F]">
-            Get In Touch
-            <ArrowRight className="inline-block ml-2 group-hover:translate-x-2 transition-transform" />
+            <a href="mailto:dan@egglestonventures.com?subject=Eggleston%20Ventures%20Inquiry" className="flex items-center">
+              Get In Touch
+              <ArrowRight className="inline-block ml-2 group-hover:translate-x-2 transition-transform" />
+            </a>
           </button>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export default function Header() {
   return (
@@ -22,7 +23,11 @@ export default function Header() {
               variant="ghost"
               className="text-xl font-bold hover:bg-[#D32F2F] hover:text-white transition-colors"
             >
-              {item}
+              {item === 'About' ? (
+                <Link href="/about">About</Link>
+              ) : (
+                item
+              )}
             </Button>
           ))}
         </nav>

@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { Button } from '@/app/components/ui/button'
 
 export default function Header() {
   return (
@@ -17,16 +17,16 @@ export default function Header() {
           />
         </div>
         <nav className="hidden md:flex items-center gap-6">
-          {['Portfolio', 'About', 'Contact'].map((item) => (
+          {['Portfolio', 'Contact'].map((item) => (
             <Button
               key={item}
               variant="ghost"
               className="text-xl font-bold hover:bg-[#D32F2F] hover:text-white transition-colors"
             >
-              {item === 'About' ? (
-                <Link href="/about">About</Link>
+              {item === 'Portfolio' ? (
+                <Link href="#portfolio">Portfolio</Link>
               ) : (
-                item
+                <Link href="mailto:dan@egglestonventures.com?subject=Eggleston%20Ventures%20Inquiry">Contact Us</Link>
               )}
             </Button>
           ))}
